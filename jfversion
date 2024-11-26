@@ -3,7 +3,7 @@
 # git clone https://github.com/delaere/LPHY2131 LPHYS2131
 # source LPHYS2131/install.sh
 
-apptainer exec -B /cvmfs /cvmfs/cernvm-prod.cern.ch/cvm3 /bin/bash <<- EOF_CMSSW
+docker run -B /cvmfs /cvmfs/cernvm-prod.cern.ch/cvm3 /bin/bash <<- EOF_CMSSW
 
 xmessage -buttons Ok:0 -nearmouse "Installing CMSSW 5.3.32 (used for 2011 data processing)" -timeout 5 &
 
